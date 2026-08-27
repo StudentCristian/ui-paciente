@@ -1,0 +1,1 @@
+import {format,parseISO} from 'date-fns';import {es} from 'date-fns/locale';export const fmt=(d:Date|string,pat='EEEE, d MMMM')=>format(typeof d==='string'?parseISO(d):d,pat,{locale:es});export const iso=(d:Date)=>format(d,'yyyy-MM-dd');
